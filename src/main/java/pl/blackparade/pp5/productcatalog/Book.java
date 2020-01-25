@@ -15,6 +15,9 @@ import java.math.BigDecimal;
 @Builder
 @Entity
 public class Book {
+    private Book(){
+
+    }
     @Id
     @GeneratedValue //Autonumered ID
 
@@ -25,7 +28,6 @@ public class Book {
     String cover;
     Boolean published;
     BigDecimal price;
-
 
 
 }

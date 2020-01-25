@@ -19,7 +19,7 @@ public class ProductCatalogFacadeTest {
     @Autowired
     BookRepository repository;
 
-
+    
     //Plain Java Object. Easy to test and move to the other's.
     @Test
     public void itAllowAddBookToCatalog(){
