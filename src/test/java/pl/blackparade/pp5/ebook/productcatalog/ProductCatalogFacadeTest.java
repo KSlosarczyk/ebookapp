@@ -1,12 +1,11 @@
-package pl.blackparade.pp5.productcatalog;
+package pl.blackparade.pp5.ebook.productcatalog;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import javax.swing.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import java.math.BigDecimal;
@@ -19,7 +18,7 @@ public class ProductCatalogFacadeTest {
     @Autowired
     BookRepository repository;
 
-    
+
     //Plain Java Object. Easy to test and move to the other's.
     @Test
     public void itAllowAddBookToCatalog(){
@@ -29,7 +28,7 @@ public class ProductCatalogFacadeTest {
         app.addBook(book);
 
         List<Book> books = app.allBooks();
-        assertThat(books).hasSize(1);
+        Assertions.assertThat(books).hasSize(1);
     }
 
     private Book thereIsBookIWouldLikeToHave() {

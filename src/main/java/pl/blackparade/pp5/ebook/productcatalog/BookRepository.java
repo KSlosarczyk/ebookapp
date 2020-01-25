@@ -1,4 +1,4 @@
-package pl.blackparade.pp5.productcatalog;
+package pl.blackparade.pp5.ebook.productcatalog;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

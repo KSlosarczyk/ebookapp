@@ -1,4 +1,4 @@
-package pl.blackparade.pp5.productcatalog;
+package pl.blackparade.pp5.ebook.productcatalog;
 
 
 import lombok.AllArgsConstructor;
